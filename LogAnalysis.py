@@ -33,7 +33,8 @@ class LogAnalysis:
         're3': ".* Connection closed by " + re_ipv4 + " port [0-9]+ \[preauth\]",
         're4': ".* Disconnected from " + re_ipv4 + " port [0-9]+ \[preauth\]",
         're5': ".* Received disconnect from " + re_ipv4 + " port [0-9]+:[0-9]+: Client disconnecting normally \[preauth\]",
-        're6': ".* Bad protocol version identification .* from " + re_ipv4 + " port [0-9]+"
+        're6': ".* Bad protocol version identification .* from " + re_ipv4 + " port [0-9]+",
+        're7': ".* phpMyAdmin\[[0-9]+\]: user denied: .* \(mysql-denied\) from " + re_ipv4
     }
 
 
@@ -126,9 +127,11 @@ class LogAnalysis:
 
     def simulazione(self):
         pl.analisys('bla bla Invalid user ppp2 from 1.1.1.1 port 11111')
+        pl.analisys('Sep 19 04:54:44 Devel01-Smart phpMyAdmin[5244]: user denied: crdbps.net (mysql-denied) from 37.120.192.27')
 
 
-pl = LogAnalysis(False, True, False)
+# pl = LogAnalysis(False, True, True)
+pl = LogAnalysis(True, True, False)
 
 if pl.simula:
     pl.simulazione()
