@@ -8,13 +8,15 @@ Example to use in production:
 2) customize variable deny_command and apply_command
 to adapt to your firewall...
 
-3) Comment / uncomment line for begin testing or production
+3) customize dictionary d0 with regular expression to intercept suspect host
+
+4) Comment / uncomment line for begin testing or production
 pl = LogAnalysis(False, True, True)
 pl = LogAnalysis(True, True, False)
 
-4) enable to execute
+5) enable to execute
 chmod +x LogAnalysis.pl
 
-5) begin parsing log :)
-tail -f /var/log/secure | ./LogAnalysis.pl
+6) begin parsing log :)
+tail -f /var/log/secure | ./LogAnalysis.py
 
