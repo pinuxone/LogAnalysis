@@ -16,5 +16,5 @@ pl = LogAnalysis(True, True, False)
 chmod +x LogAnalysis.pl
 
 5) begin parsing log :)
-tail -f /var/log/secure | ./LogAnalysis.pl
+tail -f /var/log/secure | ./LogAnalysis.py
 
