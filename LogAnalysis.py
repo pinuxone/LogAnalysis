@@ -1,4 +1,4 @@
-#!/bin/bash/python3
+#!/bin/python3
 
 __author__ = "Giuseppe Latini"
 __copyright__ = "Copyright 2020"
