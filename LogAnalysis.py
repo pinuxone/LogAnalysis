@@ -127,7 +127,7 @@ class LogAnalysis:
 
     def simulazione(self):
         pl.analisys('bla bla Invalid user ppp2 from 1.1.1.1 port 11111')
-        pl.analisys('Sep 19 04:54:44 Devel01-Smart phpMyAdmin[5244]: user denied: crdbps.net (mysql-denied) from 37.120.192.27')
+        pl.analisys('Sep 19 04:54:44 Devel01-Smart phpMyAdmin[5244]: user denied: pluto (mysql-denied) from 1.1.1.1')
 
 
 # pl = LogAnalysis(False, True, True)
