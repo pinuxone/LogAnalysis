@@ -8,7 +8,7 @@ Example to use in production:
 2) customize variable deny_command and apply_command
 to adapt to your firewall...
 
-3) customize dictionary d0 with regular expression to intercept suspect host
+3) customize dictionary d0 with regular expression to intercept host suspect
 
 4) Comment / uncomment line for begin testing or production
 pl = LogAnalysis(False, True, True)
